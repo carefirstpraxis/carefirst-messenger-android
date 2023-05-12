@@ -21,21 +21,21 @@ import androidx.wear.compose.material.Switch
 import androidx.wear.compose.material.Text
 import androidx.wear.compose.material.ToggleChip
 import com.carefirstpraxis.carefirst_messenger_android.wearable.R
-import com.carefirstpraxis.carefirst_messenger_android.wearable.data.WatchModel
-import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.components.WatchAppChip
+import com.carefirstpraxis.carefirst_messenger_android.wearable.data.MessageModel
+import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.components.MessageAppChip
 import com.google.android.horologist.compose.navscaffold.scrollableColumn
 
 @Composable
-fun WatchListScreen(
-  viewModel: WatchListViewModel,
-  scalingLazyListState: ScalingLazyListState,
-  focusRequester: FocusRequester,
-  showVignette: Boolean,
-  onClickVignetteToggle: (Boolean) -> Unit,
-  onClickWatch: (Int) -> Unit
+fun MessageListScreen(
+    viewModel: MessageListViewModel,
+    scalingLazyListState: ScalingLazyListState,
+    focusRequester: FocusRequester,
+    showVignette: Boolean,
+    onClickVignetteToggle: (Boolean) -> Unit,
+    onClickWatch: (Int) -> Unit
 ) {
   val watches by viewModel.watches
-  WatchListScreen(
+  MessageListScreen(
     watches = watches,
     scalingLazyListState = scalingLazyListState,
     focusRequester = focusRequester,
@@ -46,18 +46,18 @@ fun WatchListScreen(
 }
 
 /**
- * Displays a list of watches plus a [ToggleChip] at the top to display/hide the Vignette around
+ * Displays a list of messages plus a [ToggleChip] at the top to display/hide the Vignette around
  * the screen. The list is powered using a [ScalingLazyColumn].
  */
 @Composable
-fun WatchListScreen(
-  watches: List<WatchModel>,
-  scalingLazyListState: ScalingLazyListState,
-  focusRequester: FocusRequester,
-  showVignette: Boolean,
-  onClickVignetteToggle: (Boolean) -> Unit,
-  onClickWatch: (Int) -> Unit,
-  modifier: Modifier = Modifier
+fun MessageListScreen(
+    watches: List<MessageModel>,
+    scalingLazyListState: ScalingLazyListState,
+    focusRequester: FocusRequester,
+    showVignette: Boolean,
+    onClickVignetteToggle: (Boolean) -> Unit,
+    onClickWatch: (Int) -> Unit,
+    modifier: Modifier = Modifier
 ) {
   ScalingLazyColumn(
     modifier = modifier.scrollableColumn(focusRequester, scalingLazyListState),
@@ -97,8 +97,9 @@ fun WatchListScreen(
 
         // Displays all watches.
         items(watches) { watch ->
-            WatchAppChip(
-                watchModelNumber = watch.modelId,
+            MessageAppChip(
+                messageId = watch.messageId,
+                subject = watch.subject,
                 watchName = watch.name,
                 watchIcon = watch.icon,
                 onClickWatch = onClickWatch

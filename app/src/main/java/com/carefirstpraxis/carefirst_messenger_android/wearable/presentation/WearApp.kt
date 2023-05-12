@@ -54,10 +54,10 @@ import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.
 import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.userinput.SliderScreen
 import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.userinput.StepperScreen
 import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.userinput.UserInputComponentsScreen
-import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.watch.WatchDetailScreen
-import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.watch.WatchDetailViewModel
-import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.watchlist.WatchListScreen
-import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.watchlist.WatchListViewModel
+import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.watch.MessageDetailScreen
+import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.watch.MessageDetailViewModel
+import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.watchlist.MessageListScreen
+import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.watchlist.MessageListViewModel
 import com.google.android.horologist.composables.DatePicker
 import com.google.android.horologist.composables.TimePicker
 import com.google.android.horologist.composables.TimePickerWith12HourClock
@@ -309,11 +309,11 @@ fun WearApp(
                   val scalingLazyListState = scalingLazyListState(it)
                   val focusRequester = remember { FocusRequester() }
 
-                  val viewModel: WatchListViewModel = viewModel(
-                    factory = WatchListViewModel.Factory
+                  val viewModel: MessageListViewModel = viewModel(
+                    factory = MessageListViewModel.Factory
                   )
 
-                  WatchListScreen(
+                  MessageListScreen(
                     viewModel = viewModel,
                     scalingLazyListState = scalingLazyListState,
                     focusRequester = focusRequester,
@@ -344,12 +344,12 @@ fun WearApp(
                 ) {
                   val watchId: Int = it.arguments!!.getInt(WATCH_ID_NAV_ARGUMENT)
 
-                  val viewModel: WatchDetailViewModel = viewModel(factory = WatchDetailViewModel.factory(watchId))
+                  val viewModel: MessageDetailViewModel = viewModel(factory = MessageDetailViewModel.factory(watchId))
 
                   val scrollState = scrollState(it)
                   val focusRequester = remember { FocusRequester() }
 
-                  WatchDetailScreen(
+                  MessageDetailScreen(
                     viewModel = viewModel,
                     scrollState = scrollState,
                     focusRequester = focusRequester

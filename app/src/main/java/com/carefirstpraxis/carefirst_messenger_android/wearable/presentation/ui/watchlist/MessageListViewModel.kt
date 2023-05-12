@@ -7,16 +7,16 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider.AndroidViewModelFactory.Companion.APPLICATION_KEY
 import androidx.lifecycle.viewmodel.initializer
 import androidx.lifecycle.viewmodel.viewModelFactory
-import com.carefirstpraxis.carefirst_messenger_android.wearable.data.WatchModel
-import com.carefirstpraxis.carefirst_messenger_android.wearable.data.WatchRepository
+import com.carefirstpraxis.carefirst_messenger_android.wearable.data.MessageModel
+import com.carefirstpraxis.carefirst_messenger_android.wearable.data.MessageRepository
 import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.BaseApplication
 
 /**
  * ViewModel for the Watch List Screen.
  */
-class WatchListViewModel(watchRepository: WatchRepository) : ViewModel() {
-  private val _watches: MutableState<List<WatchModel>> = mutableStateOf(watchRepository.watches)
-  val watches: State<List<WatchModel>>
+class MessageListViewModel(messageRepository: MessageRepository) : ViewModel() {
+  private val _watches: MutableState<List<MessageModel>> = mutableStateOf(messageRepository.watches)
+  val watches: State<List<MessageModel>>
   get() = _watches
 
   companion object {
@@ -24,8 +24,8 @@ class WatchListViewModel(watchRepository: WatchRepository) : ViewModel() {
       initializer {
         val baseApplication =
         this[APPLICATION_KEY] as BaseApplication
-      WatchListViewModel(
-        watchRepository = baseApplication.watchRepository
+      MessageListViewModel(
+        messageRepository = baseApplication.messageRepository
       )
     }
   }

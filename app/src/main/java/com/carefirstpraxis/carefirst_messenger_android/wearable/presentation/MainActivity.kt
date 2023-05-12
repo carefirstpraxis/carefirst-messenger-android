@@ -9,7 +9,7 @@ import androidx.lifecycle.viewmodel.CreationExtras
 import androidx.lifecycle.viewmodel.MutableCreationExtras
 import androidx.navigation.NavHostController
 import androidx.wear.compose.navigation.rememberSwipeDismissableNavController
-import com.carefirstpraxis.carefirst_messenger_android.wearable.data.WatchRepository
+import com.carefirstpraxis.carefirst_messenger_android.wearable.data.MessageRepository
 import com.carefirstpraxis.carefirst_messenger_android.wearable.util.JankPrinter
 
 /**
@@ -44,6 +44,6 @@ class MainActivity : ComponentActivity() {
 
   override val defaultViewModelCreationExtras: CreationExtras
     get() = MutableCreationExtras(super.defaultViewModelCreationExtras).apply {
-      set(WatchRepository.WATCH_REPOSITORY_KEY, (application as BaseApplication).watchRepository)
+      set(MessageRepository.MESSAGE_REPOSITORY_KEY, (application as BaseApplication).messageRepository)
     }
 }

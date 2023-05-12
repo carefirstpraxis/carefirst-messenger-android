@@ -25,17 +25,17 @@ import androidx.wear.compose.material.Icon
 import androidx.wear.compose.material.MaterialTheme
 import androidx.wear.compose.material.Text
 import com.carefirstpraxis.carefirst_messenger_android.wearable.R
-import com.carefirstpraxis.carefirst_messenger_android.wearable.data.WatchModel
+import com.carefirstpraxis.carefirst_messenger_android.wearable.data.MessageModel
 import com.google.android.horologist.compose.navscaffold.scrollableColumn
 
 @Composable
-fun WatchDetailScreen(
-  viewModel: WatchDetailViewModel,
-  scrollState: ScrollState,
-  focusRequester: FocusRequester
+fun MessageDetailScreen(
+    viewModel: MessageDetailViewModel,
+    scrollState: ScrollState,
+    focusRequester: FocusRequester
 ) {
   val watch by viewModel.watch
-  WatchDetailScreen(
+  MessageDetailScreen(
     watch = watch,
     scrollState = scrollState,
     focusRequester = focusRequester
@@ -46,8 +46,8 @@ fun WatchDetailScreen(
  * Displays the icon, title, and description of the watch model.
  */
 @Composable
-fun WatchDetailScreen(
-  watch: WatchModel?,
+fun MessageDetailScreen(
+  watch: MessageModel?,
   scrollState: ScrollState,
   focusRequester: FocusRequester,
   modifier: Modifier = Modifier

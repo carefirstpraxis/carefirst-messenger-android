@@ -18,22 +18,22 @@ package com.carefirstpraxis.carefirst_messenger_android.wearable
 import androidx.compose.ui.test.assertHasClickAction
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
-import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.components.WatchAppChip
+import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.components.MessageAppChip
 import org.junit.Rule
 import org.junit.Test
 
 /**
  * Demonstration of a composable test.
  */
-class WatchAppChipTest {
+class MessageAppChipTest {
     @get:Rule
     var rule = createComposeRule()
 
     @Test
     fun testEvent() {
         rule.setContent {
-            WatchAppChip(
-                watchModelNumber = 1,
+            MessageAppChip(
+                messageId = 1,
                 watchName = "PixelWatch",
                 watchIcon = R.drawable.ic_watch,
                 onClickWatch = {}

@@ -63,7 +63,7 @@ class BaselineProfile {
                 intent.action = ACTION
                 startActivityAndWait(intent)
 
-                findAndClickText("List of Watches")
+                findAndClickText("List of Messages")
                 scrollDown()
                 findAndClickText("Watch 2K")
                 backWhenIdle()
