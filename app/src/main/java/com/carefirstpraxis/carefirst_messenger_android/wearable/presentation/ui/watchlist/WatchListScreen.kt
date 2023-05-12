@@ -46,7 +46,7 @@ fun WatchListScreen(
 }
 
 /**
- * Displays a list of watches plus a [ToggleChip] at the top to display/hide the Vignette around
+ * Displays a list of messages plus a [ToggleChip] at the top to display/hide the Vignette around
  * the screen. The list is powered using a [ScalingLazyColumn].
  */
 @Composable
@@ -98,7 +98,8 @@ fun WatchListScreen(
         // Displays all watches.
         items(watches) { watch ->
             WatchAppChip(
-                watchModelNumber = watch.modelId,
+                messageId = watch.messageId,
+                subject = watch.subject,
                 watchName = watch.name,
                 watchIcon = watch.icon,
                 onClickWatch = onClickWatch

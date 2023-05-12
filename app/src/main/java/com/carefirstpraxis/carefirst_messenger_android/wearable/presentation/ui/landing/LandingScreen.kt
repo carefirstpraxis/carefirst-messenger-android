@@ -43,7 +43,7 @@ import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.
 import com.google.android.horologist.compose.navscaffold.scrollableColumn
 
 /**
- * Simple landing page with three actions, view a list of watches, toggle on/off text before the
+ * Simple landing page with three actions, view a list of messages, toggle on/off text before the
  * time or view a demo of different user input components.
  *
  * A text label indicates the screen shape and places it at the bottom of the screen.

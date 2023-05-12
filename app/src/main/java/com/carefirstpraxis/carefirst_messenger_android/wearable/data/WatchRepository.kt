@@ -12,7 +12,7 @@ class WatchRepository(
 
   fun getWatch(id: Int): WatchModel? {
     return watchLocalDataSource.watches.firstOrNull {
-      it.modelId == id
+      it.messageId == id
     }
   }
 

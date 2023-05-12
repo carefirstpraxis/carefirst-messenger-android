@@ -23,7 +23,8 @@ import com.carefirstpraxis.carefirst_messenger_android.wearable.R
  */
 @Composable
 fun WatchAppChip(
-  watchModelNumber: Int,
+  messageId: Int,
+  subject: String,
   watchName: String,
   watchIcon: Int,
   onClickWatch: (Int) -> Unit,
@@ -47,13 +48,13 @@ fun WatchAppChip(
     },
     secondaryLabel = {
       Text(
-        text = "id: $watchModelNumber",
+        text = "$subject",
         maxLines = 1,
         overflow = TextOverflow.Ellipsis
       )
     },
     onClick = {
-      onClickWatch(watchModelNumber)
+      onClickWatch(messageId)
     }
   )
 }
@@ -66,7 +67,8 @@ fun WatchAppChip(
 fun PreviewWatchAppChip() {
   Box {
     WatchAppChip(
-      watchModelNumber = 123456,
+      messageId = 123456,
+      subject = "Test Subject",
       watchName = "Watch 123456 Name",
       watchIcon = R.drawable.ic_watch,
       onClickWatch = { }

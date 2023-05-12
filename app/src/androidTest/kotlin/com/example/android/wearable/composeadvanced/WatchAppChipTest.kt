@@ -33,7 +33,7 @@ class WatchAppChipTest {
     fun testEvent() {
         rule.setContent {
             WatchAppChip(
-                watchModelNumber = 1,
+                messageId = 1,
                 watchName = "PixelWatch",
                 watchIcon = R.drawable.ic_watch,
                 onClickWatch = {}

@@ -6,76 +6,53 @@ package com.carefirstpraxis.carefirst_messenger_android.wearable.data
 class WatchLocalDataSource {
   val watches = listOf(
     WatchModel(
-      modelId = 100001,
-      name = "Power Watch 1",
-      description = "The Power Watch 1 was fictional watch that was released in lorem " +
-        "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " +
-        "incididunt ut labore et dolore magna aliqua. Mauris rhoncus aenean vel elit " +
-        "scelerisque mauris pellentesque. Tellus rutrum tellus pellentesque eu. " +
-        "Ullamcorper a lacus vestibulum sed arcu. Malesuada proin libero nunc consequat " +
-        "interdum varius sit amet. Eget nullam non nisi est."
+      messageId = 100001,
+      subject = "Appt Cancellation",
+      name = "Joe Jenkins",
+      description = "I need to cancel my April 10th appointment.  Can we reschedule " +
+        "it for some time the following week?"
+    ),
+    WatchModel(
+      messageId = 100002,
+      subject = "Test Results - Joe Jenkins",
+      name = "Dr. James",
+      description = "The test for Joe Jenkins are in.  Please consult the lab " +
+        "for the latest results"
       ),
       WatchModel(
-        modelId = 100002,
-        name = "Watch 2K",
-        description = "The 2K Watch was fictional watch that was first conceived in lorem " +
-          "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " +
-          "incididunt ut labore et dolore magna aliqua. Mauris rhoncus aenean vel elit " +
-          "scelerisque mauris pellentesque. Tellus rutrum tellus pellentesque eu. " +
-          "Ullamcorper a lacus vestibulum sed arcu. Malesuada proin libero nunc " +
-          "consequat interdum varius sit amet. Eget nullam non nisi est"
-        ),
-        WatchModel(
-          modelId = 100003,
-          name = "Watch Z3",
-          description = "The Watch Z3 is a fictional square watch in the early days of " +
-            "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua. Mauris rhoncus aenean " +
-            "vel elit scelerisque mauris pellentesque. Tellus rutrum tellus pellentesque " +
-            "eu. Ullamcorper a lacus vestibulum sed arcu. Malesuada proin libero nunc " +
-            "consequat interdum varius sit amet. Eget nullam non nisi est"
-        ),
-        WatchModel(
-          modelId = 100004,
-          name = "Super S Watch 40",
-          description = "The Super S Watch 4 was fictional watch that was, well, super " +
-            "compared to its predecessor."
-        ),
-        WatchModel(
-          modelId = 100005,
-          name = "Watch C5",
-          description = "The Watch C5 was fictional watch that was first released in lorem " +
-            "ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor " +
-            "incididunt ut labore et dolore magna aliqua. Mauris rhoncus aenean vel elit " +
-            "scelerisque mauris pellentesque. Tellus rutrum tellus pellentesque eu. " +
-            "Ullamcorper a lacus vestibulum sed arcu. Malesuada proin libero nunc " +
-            "consequat interdum varius sit amet. Eget nullam non nisi est"
-        ),
-        WatchModel(
-          modelId = 100006,
-          name = "Super T6 Watch",
-          description = "The Super T6 Watch was fictional watch that was and upgrade over " +
-            "the T5, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut " +
-            "labore et dolore magna aliqua. Mauris rhoncus aenean vel elit scelerisque " +
-            "mauris pellentesque. Tellus rutrum tellus pellentesque eu. Ullamcorper a " +
-            "lacus vestibulum sed arcu. Malesuada proin libero nunc consequat interdum " +
-            "varius sit amet. Eget nullam non nisi est"
-        ),
-        WatchModel(
-          modelId = 100007,
-          name = "Wear 7",
-          description = "The Wear 7 was a fictional watch that was first released in lorem " +
-            "ipsum dolor sit amet."
-        ),
-        WatchModel(
-          modelId = 100008,
-          name = "Final Watch 8",
-          description = "The Final Watch 8 was fictional watch that was first released in " +
-            "lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod " +
-            "tempor incididunt ut labore et dolore magna aliqua. Mauris rhoncus aenean " +
-            "vel elit scelerisque mauris pellentesque. Tellus rutrum tellus pellentesque " +
-            "eu. Ullamcorper a lacus vestibulum sed arcu. Malesuada proin libero nunc " +
-            "consequat interdum varius sit amet. Eget nullam non nisi est"
-        )
+        messageId = 100003,
+        subject = "Lab Work",
+        name = "Mary Claret",
+        description = "The lab work for Joseph Jenkins is now completed.  See attached " +
+          "report."
+      ),
+      WatchModel(
+        messageId = 100004,
+        subject = "Appt Request",
+        name = "Sarah Uline",
+        description = "The portal suggested that I set a date for the follow-up " +
+          "appointment.  I am on vacation but will be free in May."
+      ),
+      WatchModel(
+        messageId = 100005,
+        subject = "Follow Up",
+        name = "Newton Lab",
+        description = "The follow-up lab work is ready to be processed. " +
+          "Check schedule for pickup time."
+      ),
+      WatchModel(
+        messageId = 100006,
+        subject = "Appt Cancellation",
+        name = "Frank Pfinzer",
+        description = "I need to cancel my follow-up appointment this week " +
+          "but I can reschedule for next week."
+      ),
+      WatchModel(
+        messageId = 100007,
+        subject = "Prescription Refill",
+        name = "Gene Vincent",
+        description = "The Rx for Codeine needs a refill since I finished the " +
+          "bottle last week."
+      )
     )
 }
