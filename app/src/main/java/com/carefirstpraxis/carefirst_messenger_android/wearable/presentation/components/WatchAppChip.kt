@@ -19,10 +19,10 @@ import androidx.wear.compose.material.Text
 import com.carefirstpraxis.carefirst_messenger_android.wearable.R
 
 /**
- * Simple Chip for displaying the Watch models.
+ * Simple Chip for displaying the message
  */
 @Composable
-fun WatchAppChip(
+fun MessageAppChip(
   messageId: Int,
   subject: String,
   watchName: String,
@@ -64,9 +64,9 @@ fun WatchAppChip(
   uiMode = Configuration.UI_MODE_TYPE_WATCH
 )
 @Composable
-fun PreviewWatchAppChip() {
+fun PreviewMessageAppChip() {
   Box {
-    WatchAppChip(
+    MessageAppChip(
       messageId = 123456,
       subject = "Test Subject",
       watchName = "Watch 123456 Name",

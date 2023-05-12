@@ -1,18 +1,18 @@
 package com.carefirstpraxis.carefirst_messenger_android.wearable.presentation
 
 import android.app.Application
-import com.carefirstpraxis.carefirst_messenger_android.wearable.data.WatchLocalDataSource
-import com.carefirstpraxis.carefirst_messenger_android.wearable.data.WatchRepository
+import com.carefirstpraxis.carefirst_messenger_android.wearable.data.MessagesLocalDataSource
+import com.carefirstpraxis.carefirst_messenger_android.wearable.data.MessageRepository
 
 /**
  * Provides repository for watch devices.
  */
 class BaseApplication : Application() {
-  private val watchLocalDataSource by lazy {
-    WatchLocalDataSource()
+  private val messagesLocalDataSource by lazy {
+    MessagesLocalDataSource()
   }
 
-  val watchRepository by lazy {
-    WatchRepository(watchLocalDataSource = watchLocalDataSource)
+  val messageRepository by lazy {
+    MessageRepository(messagesLocalDataSource = messagesLocalDataSource)
   }
 }

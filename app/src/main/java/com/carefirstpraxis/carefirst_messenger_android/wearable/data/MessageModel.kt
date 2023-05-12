@@ -5,7 +5,7 @@ import com.carefirstpraxis.carefirst_messenger_android.wearable.R
 /**
  * Simple Model representing fake watch models.
  */
-data class WatchModel(
+data class MessageModel(
   val messageId: Int,
   val subject: String,
   val name: String,
