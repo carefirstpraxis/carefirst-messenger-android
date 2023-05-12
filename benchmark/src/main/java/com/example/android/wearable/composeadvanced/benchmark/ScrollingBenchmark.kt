@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.wearable.composeadvanced.benchmark
+package com.carefirstpraxis.carefirst_messenger_android.wearable.benchmark
 
 import android.content.Intent
 import android.graphics.Point
@@ -44,7 +44,7 @@ class ScrollingBenchmark(
         iterations = 10,
         startupMode = StartupMode.WARM,
         setupBlock = {
-            startActivityAndWait(Intent("com.example.android.wearable.composeadvanced.BENCHMARK"))
+            startActivityAndWait(Intent("com.carefirstpraxis.carefirst_messenger_android.wearable.BENCHMARK"))
         }
     ) {
         val list = device.findObject(By.desc("ScalingLazyColumn"))
@@ -63,6 +63,6 @@ class ScrollingBenchmark(
         @JvmStatic
         fun parameters() = listOf(CompilationMode.None(), CompilationMode.Partial())
 
-        private const val PACKAGE_NAME = "com.example.android.wearable.composeadvanced"
+        private const val PACKAGE_NAME = "com.carefirstpraxis.carefirst_messenger_android.wearable"
     }
 }

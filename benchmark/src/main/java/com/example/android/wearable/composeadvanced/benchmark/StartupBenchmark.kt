@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.wearable.composeadvanced.benchmark
+package com.carefirstpraxis.carefirst_messenger_android.wearable.benchmark
 
 import androidx.benchmark.macro.CompilationMode
 import androidx.benchmark.macro.StartupMode
@@ -51,6 +51,6 @@ class StartupBenchmark(
         @JvmStatic
         fun parameters() = listOf(CompilationMode.None(), CompilationMode.Partial())
 
-        private const val PACKAGE_NAME = "com.example.android.wearable.composeadvanced"
+        private const val PACKAGE_NAME = "com.carefirstpraxis.carefirst_messenger_android.wearable"
     }
 }

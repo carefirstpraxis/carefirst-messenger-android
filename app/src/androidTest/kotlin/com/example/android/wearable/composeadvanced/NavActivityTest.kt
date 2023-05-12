@@ -13,15 +13,15 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.wearable.composeadvanced
+package com.carefirstpraxis.carefirst_messenger_android.wearable
 
 import androidx.compose.ui.test.junit4.AndroidComposeTestRule
 import androidx.compose.ui.test.junit4.createAndroidComposeRule
 import androidx.lifecycle.Lifecycle
 import androidx.navigation.NavOptionsBuilder
 import androidx.test.ext.junit.rules.ActivityScenarioRule
-import com.example.android.wearable.composeadvanced.presentation.MainActivity
-import com.example.android.wearable.composeadvanced.presentation.navigation.Screen
+import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.MainActivity
+import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.navigation.Screen
 import org.junit.Assert.assertEquals
 import org.junit.Rule
 import org.junit.Test

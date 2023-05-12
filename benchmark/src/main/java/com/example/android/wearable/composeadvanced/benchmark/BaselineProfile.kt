@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.wearable.composeadvanced.benchmark
+package com.carefirstpraxis.carefirst_messenger_android.wearable.benchmark
 
 import android.content.Intent
 import android.graphics.Point
@@ -33,7 +33,7 @@ import org.junit.runner.RunWith
 // the classes and methods that are pre-compiled at installation time, rather than JIT'd at runtime.
 // 1) Run this test on a device
 // 2) Copy the generated file to your workspace - command is output as part of the test:
-// `adb pull "/sdcard/Android/media/com.example.android.wearable.composeadvanced.benchmark/"
+// `adb pull "/sdcard/Android/media/com.carefirstpraxis.carefirst_messenger_android.wearable.benchmark/"
 //           "additional_test_output/BaselineProfile_profile-baseline-prof-2022-03-25-16-58-49.txt"
 //           .`
 // 3) Add the rules as androidMain/baseline-prof.txt
@@ -109,7 +109,7 @@ class BaselineProfile {
     }
 
     companion object {
-        private const val PACKAGE_NAME = "com.example.android.wearable.composeadvanced"
-        private const val ACTION = "com.example.android.wearable.composeadvanced.MAIN"
+        private const val PACKAGE_NAME = "com.carefirstpraxis.carefirst_messenger_android.wearable"
+        private const val ACTION = "com.carefirstpraxis.carefirst_messenger_android.wearable.MAIN"
     }
 }

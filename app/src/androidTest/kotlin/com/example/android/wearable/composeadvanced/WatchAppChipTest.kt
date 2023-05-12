@@ -13,12 +13,12 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.android.wearable.composeadvanced
+package com.carefirstpraxis.carefirst_messenger_android.wearable
 
 import androidx.compose.ui.test.assertHasClickAction
 import androidx.compose.ui.test.junit4.createComposeRule
 import androidx.compose.ui.test.onNodeWithText
-import com.example.android.wearable.composeadvanced.presentation.components.WatchAppChip
+import com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.components.WatchAppChip
 import org.junit.Rule
 import org.junit.Test
 

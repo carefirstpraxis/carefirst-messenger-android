@@ -8,7 +8,7 @@
   <uses-feature android:name="android.hardware.type.watch" />
 
   <application
-    android:name=".presentation.BaseApplication"
+    android:name="com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.BaseApplication"
     android:allowBackup="true"
     android:fullBackupOnly="true"
     android:icon="@mipmap/ic_launcher"
@@ -29,7 +29,7 @@
       />
 
       <activity
-        android:name=".presentation.MainActivity"
+        android:name="com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.MainActivity"
         android:exported="true"
       >
         <intent-filter>
@@ -37,7 +37,7 @@
           <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         <intent-filter>
-          <action android:name="com.example.android.wearable.composeadvanced.MAIN" />
+          <action android:name="com.carefirstpraxis.carefirst_messenger_android.wearable.MAIN" />
           <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
 
@@ -55,7 +55,7 @@
       </activity>
 
       <activity
-        android:name=".benchmark.ScrollActivity"
+        android:name="com.carefirstpraxis.carefirst_messenger_android.wearable.benchmark.ScrollActivity"
         android:exported="true"
         android:label="CA Scroll"
       >
@@ -64,13 +64,13 @@
           <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         <intent-filter>
-          <action android:name="com.example.android.wearable.composeadvanced.BENCHMARK" />
+          <action android:name="com.carefirstpraxis.carefirst_messenger_android.wearable.BENCHMARK" />
           <category android:name="android.intent.category.DEFAULT" />
         </intent-filter>
       </activity>
 
       <activity
-        android:name=".presentation.ui.map.MapActivity"
+        android:name="com.carefirstpraxis.carefirst_messenger_android.wearable.presentation.ui.map.MapActivity"
         android:exported="true"
         android:label="@string/map_activity_name">
       </activity>

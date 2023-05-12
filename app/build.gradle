@@ -12,16 +12,16 @@ if (localFile.exists()) {
 android {
   compileSdk 33
 
-  namespace = "com.example.android.wearable.composeadvanced"
+  namespace = "com.carefirstpraxis.carefirst_messenger_android.wearable"
 
   defaultConfig {
-    applicationId "com.example.android.wearable.composeadvanced"
+    applicationId "com.carefirstpraxis.carefirst_messenger_android.wearable"
     minSdk 26
     targetSdk 30
     versionCode 1
     versionName "1.0"
 
-    applicationId "com.example.android.wearable.composeadvanced"
+    applicationId "com.carefirstpraxis.carefirst_messenger_android.wearable"
 
     testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
 
